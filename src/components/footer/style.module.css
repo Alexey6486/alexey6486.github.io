@@ -1,0 +1,30 @@
+.footer {
+    height: 220px;
+    background-color: var(--mainBlack);
+    display: flex;
+    justify-content: center;
+}
+.footerInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    height: 100%;
+}
+.footer__author>h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+    color: #ffffff;
+    pointer-events: none;
+}
+.footer__copyright>p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    color: #ffffff;
+    pointer-events: none;
+}
