@@ -1,5 +1,5 @@
 .introductionBlock{
-    height: 100vh;
+    height: calc(100vh - 70px);
     background-color: #f5f5f5;
 }
 .introductionBlock>div{
