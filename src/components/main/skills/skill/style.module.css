@@ -11,7 +11,6 @@
     width: 100%;
     margin-bottom: 20px;
     position: relative;
-
 }
 .skill__img::before{
     content: "";
@@ -34,6 +33,97 @@
 .skill__img>img{
     max-width: 100%;
     display: block;
+    transition: all linear 200ms;
+}
+.skill__img:hover>img{
+    filter: brightness(1.2);
+}
+.skill.reactAnimation .skill__img>img{
+    animation: reactAnimation infinite linear 35s;
+    padding: 20px 0;
+}
+@keyframes reactAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes skillAnmationTypeOne {
+    0% {
+        filter: brightness(1);
+    }
+    8.33333% {
+        filter: brightness(1.5);
+    }
+    16.66666% {
+        filter: brightness(1);
+    }
+    66.66665% {
+        filter: brightness(1);
+    }
+    74.99998% {
+        filter: brightness(1.5);
+    }
+    83.33331% {
+        filter: brightness(1);
+    }
+    100% {
+        filter: brightness(1);
+    }
+}
+@keyframes skillAnmationTypeTwo {
+    0% {
+        filter: brightness(1);
+    }
+    33.33333% {
+        filter: brightness(1);
+    }
+    41.66666% {
+        filter: brightness(1.5);
+    }
+    49.99999% {
+        filter: brightness(1);
+    }
+   100% {
+        filter: brightness(1);
+    }
+}
+@keyframes skillAnmationTypeThree {
+    0% {
+        filter: brightness(1);
+    }
+    16.66666% {
+        filter: brightness(1);
+    }
+    24.99999% {
+        filter: brightness(1.5);
+    }
+    33.33333% {
+        filter: brightness(1);
+    }
+    49.99999% {
+        filter: brightness(1);
+    }
+    58.33332% {
+        filter: brightness(1.5);
+    }
+    66.66665% {
+        filter: brightness(1);
+    }
+    100% {
+        filter: brightness(1);
+    }
+}
+.skill:nth-child(2) .skill__img>img{
+    animation: skillAnmationTypeOne infinite linear 8s;
+}
+.skill:nth-child(3) .skill__img>img{
+    animation: skillAnmationTypeThree infinite linear 8s;
+}
+.skill:nth-child(4) .skill__img>img{
+    animation: skillAnmationTypeTwo infinite linear 8s;
 }
 .skill__type{
     text-align: center;

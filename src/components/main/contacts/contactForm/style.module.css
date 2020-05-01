@@ -87,14 +87,14 @@
     padding: 5px;
     font-size: 16px;
     font-family: 'Exo 2', sans-serif;
-    box-shadow: 2px 2px 0 rgba(255,164,5,1);
+    box-shadow: 3px 3px 0 rgba(255,164,5,1);
     transition: all linear 150ms;
 }
 .contactsForm__group textarea:hover,
 .contactsForm__group textarea:focus{
     border: 1px solid var(--mainOrange);
     outline: 0;
-    box-shadow: 2px -2px 0 rgba(245,245,245,1);
+    box-shadow: 3px -3px 0 rgba(245,245,245,1);
 }
 .contactsForm__group textarea::placeholder{
     color: var(--mainBlack);
@@ -117,11 +117,11 @@
     cursor: pointer;
     transition: all linear 150ms;
     z-index: 10;
-    box-shadow: 2px 2px 0 rgba(255,164,5,1);
+    box-shadow: 3px 3px 0 rgba(255,164,5,1);
 }
 .contactsForm__group button:hover{
     border: 1px solid var(--mainOrange);
     background-color: transparent;
     color: var(--mainWhite);
-    box-shadow: 2px -2px 0 rgba(245,245,245,1);
+    box-shadow: 3px -3px 0 rgba(245,245,245,1);
 }

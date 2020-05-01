@@ -1,0 +1,12 @@
+.sample{
+    width: 16.33333%;
+    height: 350px;
+    background-color: var(--mainBlack);
+    transition: all linear 250ms;
+}
+.sample:not(:last-child){
+    margin-right: 0.66666%;
+}
+.sample.active{
+    width: 49%;
+}

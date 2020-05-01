@@ -17,7 +17,6 @@
     /*box-shadow: 6px -3px 3px rgba(0,0,0,0.7);*/
     box-shadow: 6px 3px 0 rgba(243, 123, 0, 0.7);
 }
-
 .samplesBlock::after{
     content: "";
     position: absolute;
@@ -28,4 +27,11 @@
     background-color: var(--mainWhite);
     transform: skewX(-60deg);
     box-shadow: -5px -4px 3px rgba(0,0,0,0.5);
+}
+.samplesWrap{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100% - 70px);
+    align-items: center;
 }

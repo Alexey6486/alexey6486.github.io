@@ -3,7 +3,7 @@ import styles from './style.module.css'
 
 function Skill(props) {
     return (
-        <div className={styles.skill}>
+        <div className={props.reactAnimation ? `${styles.skill} ${styles.reactAnimation}` : styles.skill}>
             <div className={styles.skill__img}>
                 <img src={props.imgSrc}/>
             </div>

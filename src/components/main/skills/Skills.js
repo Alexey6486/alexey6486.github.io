@@ -13,7 +13,7 @@ function Skills() {
             <div className="container">
                 <GlobalTitle blockTitleFirstHalf="навыки" blockTitleSecondHalf="ыки"/>
                 <div className={styles.skillsWrap}>
-                    <Skill imgSrc={reactImg} skillType="React"/>
+                    <Skill imgSrc={reactImg} skillType="React" reactAnimation/>
                     <Skill imgSrc={jsImg} skillType="JavaScript"/>
                     <Skill imgSrc={cssImg} skillType="CSS"/>
                     <Skill imgSrc={htmlImg} skillType="HTML"/>
