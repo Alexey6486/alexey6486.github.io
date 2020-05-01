@@ -1,0 +1,41 @@
+.contactsBlock{
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: var(--mainBlack);
+    padding-top: 70px;
+}
+.contactsBlock::before{
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -40%;
+    width: 100%;
+    height: 15px;
+    background-color: var(--mainBlack);
+    transform: skewX(60deg);
+    box-shadow: 6px -3px 0 rgba(243, 123, 0, 0.7);
+}
+.contactsBlock::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -40%;
+    width: 100%;
+    height: 15px;
+    background-color: #f5f5f5;
+    transform: skewX(60deg);
+    box-shadow: -5px 4px 3px rgba(0,0,0,0.5);
+}
+.contactsWrap{
+    /*padding-top: 50px;*/
+    height: calc(100% - 70px);
+    align-items: center;
+    display: flex;
+}
+.contactsWrapInner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}

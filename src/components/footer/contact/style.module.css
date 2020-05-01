@@ -15,7 +15,7 @@
     margin-right: 15px;
 }
 .contactFooter__Wrap>svg{
-    fill: #ffffff;
+    fill: var(--mainBlack);
     transition: all linear 200ms;
 }
 .contactFooter__Wrap:hover>svg{

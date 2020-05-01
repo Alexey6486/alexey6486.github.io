@@ -30,7 +30,6 @@
     background: -ms-radial-gradient(center, ellipse cover, rgba(68,68,68,0) 0%, rgba(68,68,68,0.5) 51%, rgba(68,68,68,1) 100%);
     background: radial-gradient(ellipse at center, rgba(68,68,68,0) 0%, rgba(68,68,68,0.5) 51%, rgba(68,68,68,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#444444', GradientType=1 );
-
 }
 .skill__img>img{
     max-width: 100%;
@@ -44,4 +43,5 @@
     font-size: 28px;
     font-weight: 800;
     color: var(--mainWhite);
+    pointer-events: none;
 }
