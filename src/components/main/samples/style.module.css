@@ -29,9 +29,20 @@
     box-shadow: -5px -4px 3px rgba(0,0,0,0.5);
 }
 .samplesWrap{
-    padding-top: 50px;
+    /*padding-top: 50px;*/
     display: flex;
     flex-wrap: wrap;
     height: calc(100% - 70px);
     align-items: center;
+    position: relative;
+}
+.samplesWrap::before{
+    content: "";
+    position: absolute;
+    width: calc(100% + 15px);
+    height: 366px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -7px;
+    background-color: var(--mainBlack);
 }

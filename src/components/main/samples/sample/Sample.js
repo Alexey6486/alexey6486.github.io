@@ -4,13 +4,20 @@ import styles from './style.module.css'
 function Sample(props) {
 
     function mouseOver(e) {
-        let parentElement = e.target.parentElement;
+console.log(e.target);
+        let parentElement = e.target.parentElement.parentElement.parentElement;
         parentElement.querySelector(`.${styles.active}`).classList.remove(`${styles.active}`);
-        e.target.classList.add(`${styles.active}`);
+        e.target.parentElement.parentElement.classList.add(`${styles.active}`);
     }
     return (
         <div className={props.activeClass ? `${styles.sample} ${styles.active}` : styles.sample}
-             onMouseOver={mouseOver}>
+             >
+            <div className={styles.sample__image} >
+                <img src={props.imgLink} alt="" onMouseOver={mouseOver}/>
+                <a className={styles.sample__details} href={props.sampleUrl} target="_blank">
+                    Подробнее
+                </a>
+            </div>
         </div>
     );
 }
