@@ -1,0 +1,5 @@
+.mainWrap{
+    min-height: calc(100vh - 220px);
+    padding-top: 70px;
+    position: relative;
+}

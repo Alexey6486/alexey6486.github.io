@@ -1,0 +1,13 @@
+.introductionBlock{
+    height: calc(100vh - 70px);
+    background-color: var(--mainWhite);
+}
+.introductionBlock>div{
+    height: inherit;
+}
+.introduction{
+    display: flex;
+    height: inherit;
+    position: relative;
+}
+

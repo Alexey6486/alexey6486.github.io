@@ -1,0 +1,22 @@
+.contactBlock{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 2px solid #ffffff;
+}
+.contactWrap{
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+.contactWrap:not(:last-child){
+    margin-right: 10px;
+}
+.contactWrap>svg{
+    fill: #ffffff;
+    transition: all linear 200ms;
+}
+.contactWrap:hover>svg{
+    fill: var(--mainOrange);
+}

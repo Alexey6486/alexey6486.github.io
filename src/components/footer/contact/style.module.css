@@ -1,0 +1,23 @@
+.contactFooter{
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+    width: 100%;
+}
+.contactFooter__Wrap{
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all linear 200ms;
+}
+.contactFooter__Wrap:not(:last-child){
+    margin-right: 15px;
+}
+.contactFooter__Wrap>svg{
+    fill: var(--mainBlack);
+    transition: all linear 200ms;
+}
+.contactFooter__Wrap:hover>svg{
+    fill: var(--mainOrange);
+}

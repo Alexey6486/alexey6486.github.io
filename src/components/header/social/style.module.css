@@ -1,0 +1,19 @@
+.socialBlock{
+    display: flex;
+    align-items: center;
+}
+.socialWrap{
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+.socialWrap:not(:last-child){
+    margin-right: 10px;
+}
+.socialWrap>svg{
+    fill: #ffffff;
+    transition: all linear 200ms;
+}
+.socialWrap:hover>svg{
+    fill: var(--mainOrange);
+}

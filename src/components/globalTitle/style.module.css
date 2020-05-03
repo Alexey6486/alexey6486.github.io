@@ -1,0 +1,61 @@
+.globalTitle{
+    display: flex;
+    padding-left: 30px;
+}
+.globalTitle>h2{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 28px;
+    position: relative;
+    display: block;
+    margin-right: 1.5px;
+    color: var(--mainBlack);
+    z-index: 5;
+    pointer-events: none;
+}
+.globalTitle>h2::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    background-color: var(--mainWhite);
+    width: calc(100% + 60px);
+    height: 100px;
+    z-index: -1;
+    box-shadow: -2px 2px 0px rgba(243,123,0,0.6);
+}
+.globalTitle>h2>span{
+    display: block;
+    color: var(--mainWhite);
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.globalTitle>h2>span::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -3px;
+    transform: translateY(-50%);
+    background-color: var(--mainBlack);
+    width: calc(100% + 7px);
+    height: 80px;
+    z-index: -1;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+.globalTitle.invertColors>h2{
+    color: var(--mainWhite);
+}
+.globalTitle.invertColors>h2::before{
+    background-color: var(--mainBlack);
+    box-shadow: -2px 2px 0px rgba(243,123,0,0.6);
+}
+.globalTitle.invertColors>h2>span{
+    color: var(--mainBlack);
+}
+.globalTitle.invertColors>h2>span::before{
+    background-color: var(--mainWhite);
+    box-shadow: 3px 3px 2px rgba(255,255,255,0.5);
+}

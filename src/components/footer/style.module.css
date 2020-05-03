@@ -1,0 +1,33 @@
+.footer {
+    height: 220px;
+    background-color: var(--mainWhite);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 -1px 4px rgba(255,164,5,0.8);
+    position: relative;
+}
+.footerInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    height: 100%;
+}
+.footer__author>h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1;
+    color: var(--mainBlack);
+    pointer-events: none;
+}
+.footer__copyright>p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    color: var(--mainBlack);
+    pointer-events: none;
+}
+

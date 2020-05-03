@@ -1,13 +1,121 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Exo+2:wght@300&family=Open+Sans&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+/* PRESET */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*, *:before, *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+html{
+    overflow-x: hidden;
+}
+ol, ul {
+    list-style: none;
+}
+a, input{
+    outline: none !important;
+    text-decoration: none !important;
+}
+/* no arrows for input[type=number] */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #bbbbbb;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ff8e00;
+}
+
+/* CONTAINER */
+.container{
+    padding: 0 30px ;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+@media all and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media all and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media all and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .container{
+        max-width: 1200px;
+    }
+}
+
+/* VARIABLES */
+:root {
+    --mainOrange: #ffa405;
+    --mainBlack: #444444;
+    --mainWhite: #f5f5f5;
+}
+

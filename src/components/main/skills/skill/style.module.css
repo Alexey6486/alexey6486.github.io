@@ -1,0 +1,181 @@
+.skill{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 25%;
+    justify-content: space-between;
+    height: 369px;
+    position: relative;
+}
+.skill__img{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.skill__img::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: rgba(68,68,68,0);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(68,68,68,0) 0%, rgba(68,68,68,0.5) 51%, rgba(68,68,68,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(68,68,68,0)), color-stop(51%, rgba(68,68,68,0.5)), color-stop(100%, rgba(68,68,68,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(68,68,68,0) 0%, rgba(68,68,68,0.5) 51%, rgba(68,68,68,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(68,68,68,0) 0%, rgba(68,68,68,0.5) 51%, rgba(68,68,68,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(68,68,68,0) 0%, rgba(68,68,68,0.5) 51%, rgba(68,68,68,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(68,68,68,0) 0%, rgba(68,68,68,0.5) 51%, rgba(68,68,68,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#444444', GradientType=1 );
+}
+.skill__img>img{
+    max-width: 100%;
+    display: block;
+    transition: all linear 200ms;
+}
+.skill__img:hover>img{
+    filter: brightness(1.2);
+}
+.skill.reactAnimation .skill__img>img{
+    animation: reactAnimation infinite linear 35s;
+    padding: 20px 0;
+}
+@keyframes reactAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes skillAnmationTypeOne {
+    0% {
+        filter: brightness(1);
+    }
+    8.33333% {
+        filter: brightness(1.5);
+    }
+    16.66666% {
+        filter: brightness(1);
+    }
+    66.66665% {
+        filter: brightness(1);
+    }
+    74.99998% {
+        filter: brightness(1.5);
+    }
+    83.33331% {
+        filter: brightness(1);
+    }
+    100% {
+        filter: brightness(1);
+    }
+}
+@keyframes skillAnmationTypeTwo {
+    0% {
+        filter: brightness(1);
+    }
+    33.33333% {
+        filter: brightness(1);
+    }
+    41.66666% {
+        filter: brightness(1.5);
+    }
+    49.99999% {
+        filter: brightness(1);
+    }
+   100% {
+        filter: brightness(1);
+    }
+}
+@keyframes skillAnmationTypeThree {
+    0% {
+        filter: brightness(1);
+    }
+    16.66666% {
+        filter: brightness(1);
+    }
+    24.99999% {
+        filter: brightness(1.5);
+    }
+    33.33333% {
+        filter: brightness(1);
+    }
+    49.99999% {
+        filter: brightness(1);
+    }
+    58.33332% {
+        filter: brightness(1.5);
+    }
+    66.66665% {
+        filter: brightness(1);
+    }
+    100% {
+        filter: brightness(1);
+    }
+}
+.skill:nth-child(2) .skill__img>img{
+    animation: skillAnmationTypeOne infinite linear 8s;
+}
+.skill:nth-child(3) .skill__img>img{
+    animation: skillAnmationTypeThree infinite linear 8s;
+}
+.skill:nth-child(4) .skill__img>img{
+    animation: skillAnmationTypeTwo infinite linear 8s;
+}
+.skill__type{
+    text-align: center;
+    width: 100%;
+}
+.skill__type>h3{
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--mainWhite);
+    pointer-events: none;
+}
+@media all and (max-width: 1200px) {
+
+    .skill {
+        height: 313px;
+    }
+}
+@media all and (max-width: 992px) {
+
+    .skill {
+        width: 40%;
+    }
+}
+@media all and (max-width: 768px) {
+
+    .skill {
+        padding: 19px;
+    }
+}
+@media all and (max-width: 576px) {
+
+    .skill {
+        height: 270px;
+        width: 45%;
+        margin-bottom: 50px;
+    }
+    .skill__img>img {
+        max-width: 230px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media all and (max-width: 500px) {
+
+    .skill {
+        height: auto;
+        width: 70%;
+        margin: 0 auto 50px;
+        padding: 0;
+    }
+    .skill__type>h3 {
+        font-size: 35px;
+    }
+}
+
