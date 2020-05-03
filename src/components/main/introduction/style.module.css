@@ -8,4 +8,6 @@
 .introduction{
     display: flex;
     height: inherit;
+    position: relative;
 }
+

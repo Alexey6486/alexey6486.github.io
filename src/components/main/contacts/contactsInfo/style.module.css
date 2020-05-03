@@ -48,3 +48,10 @@
 .contactsInfo__text>p:not(:last-child){
     margin-bottom: 3px;
 }
+@media all and (max-width: 768px) {
+
+    .contactsInfo {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

@@ -1,5 +1,7 @@
+/* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Exo+2:wght@300&family=Open+Sans&display=swap');
 
+/* PRESET */
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +9,11 @@ body {
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
+    overflow-x: hidden;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 *, *:before, *:after{
     -moz-box-sizing: border-box;
@@ -47,28 +53,6 @@ a, input{
     outline: none !important;
     text-decoration: none !important;
 }
-.container{
-    padding: 0 30px ;
-    height: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-}
-@media all and (min-width: 1200px) {
-    .container{
-        max-width: 1200px;
-    }
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-:root {
-    --mainOrange: #ffa405;
-    --mainBlack: #444444;
-    --mainWhite: #f5f5f5;
-}
-
 /* no arrows for input[type=number] */
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -96,3 +80,40 @@ input[type=number] {
 ::-webkit-scrollbar-thumb:hover {
     background: #ff8e00;
 }
+
+/* CONTAINER */
+.container{
+    padding: 0 30px ;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+@media all and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media all and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media all and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .container{
+        max-width: 1200px;
+    }
+}
+
+/* VARIABLES */
+:root {
+    --mainOrange: #ffa405;
+    --mainBlack: #444444;
+    --mainWhite: #f5f5f5;
+}
+

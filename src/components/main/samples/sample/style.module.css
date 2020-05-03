@@ -16,6 +16,7 @@
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 .sample__image:hover::before{
     content: "";
@@ -50,11 +51,11 @@
 }
 .sample__details{
     opacity: 0;
+    display: flex;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--mainWhite);
@@ -68,6 +69,7 @@
     box-shadow: 3px 3px 0 rgba(255,165,5,1);
     transition: all linear 250ms;
     z-index: 2;
+    color: var(--mainBlack);
 }
 .sample__details:hover{
     color: var(--mainWhite);
@@ -77,4 +79,29 @@
 }
 .sample__image:hover .sample__details{
     opacity: 1;
+    visibility: visible;
+}
+@media all and (max-width: 992px) {
+
+    .sample__details {
+        transition: all linear 250ms 300ms;
+        visibility: hidden;
+    }
+    .sample__image:hover .sample__details{
+        visibility: visible;
+    }
+}
+@media all and (max-width: 576px) {
+
+    .sample.active {
+        width: 100%;
+    }
+     .sample:not(:last-child) {
+         margin-right: 0;
+     }
+     .sample {
+         width: 100%;
+         height: 170px;
+         margin-bottom: 10px;
+     }
 }

@@ -135,3 +135,47 @@
     color: var(--mainWhite);
     pointer-events: none;
 }
+@media all and (max-width: 1200px) {
+
+    .skill {
+        height: 313px;
+    }
+}
+@media all and (max-width: 992px) {
+
+    .skill {
+        width: 40%;
+    }
+}
+@media all and (max-width: 768px) {
+
+    .skill {
+        padding: 19px;
+    }
+}
+@media all and (max-width: 576px) {
+
+    .skill {
+        height: 270px;
+        width: 45%;
+        margin-bottom: 50px;
+    }
+    .skill__img>img {
+        max-width: 230px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media all and (max-width: 500px) {
+
+    .skill {
+        height: auto;
+        width: 70%;
+        margin: 0 auto 50px;
+        padding: 0;
+    }
+    .skill__type>h3 {
+        font-size: 35px;
+    }
+}
+

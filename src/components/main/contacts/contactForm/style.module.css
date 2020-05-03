@@ -125,3 +125,10 @@
     color: var(--mainWhite);
     box-shadow: 3px -3px 0 rgba(245,245,245,1);
 }
+
+@media all and (max-width: 768px) {
+
+    .contactsFormWrap {
+        max-width: unset;
+    }
+}

@@ -46,3 +46,22 @@
     left: -7px;
     background-color: var(--mainBlack);
 }
+@media all and (max-width: 992px) {
+
+    .samplesBlock {
+        height: auto;
+    }
+    .samplesWrap {
+        height: auto;
+        padding: 90px 0;
+    }
+}
+@media all and (max-width: 576px) {
+
+    .samplesWrap::before {
+        height: 726px;
+        top: 82px;
+        transform: unset;
+    }
+}
+

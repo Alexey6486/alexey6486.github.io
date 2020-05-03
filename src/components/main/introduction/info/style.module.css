@@ -62,3 +62,39 @@
     position: relative;
     z-index: 4;
 }
+
+@media all and (max-width: 768px) {
+
+    .infoIntroductionBlock {
+        width: 100%;
+    }
+    .infoIntroductionBlock__title>h2{
+        background: url("../../../../assets/img/introduction-block/banner-bg.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-position: -284px 104px;
+    }
+    .infoIntroductionBlock__title>h2 {
+        font-size: 60px;
+        text-transform: uppercase;
+    }
+}
+@media (max-width: 400px) {
+
+    .infoIntroductionBlock__title>h2 {
+        font-size: 50px;
+    }
+    .infoIntroductionBlock__title::before {
+        width: 280px;
+        height: 169px;
+    }
+    .infoIntroductionBlock__position::before {
+        width: 249px;
+        height: 77px;
+    }
+    .infoIntroductionBlock__position>h3 {
+        font-size: 30px;
+    }
+}

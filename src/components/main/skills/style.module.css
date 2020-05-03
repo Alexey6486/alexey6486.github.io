@@ -36,3 +36,17 @@
     height: calc(100% - 70px);
     align-items: center;
 }
+@media all and (max-width: 992px) {
+
+    .skillsBlock {
+        height: auto;
+        padding-bottom: 50px;
+    }
+}
+@media all and (max-width: 500px) {
+
+    .skillsWrap {
+        justify-content: center;
+        padding-top: 100px;
+    }
+}

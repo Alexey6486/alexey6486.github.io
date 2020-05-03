@@ -35,3 +35,10 @@
     object-fit: cover;
     object-position: center;
 }
+
+@media all and (max-width: 768px) {
+
+    .imageIntroductionBlock {
+        display: none;
+    }
+}

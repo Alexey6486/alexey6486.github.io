@@ -39,3 +39,13 @@
     justify-content: space-around;
     width: 100%;
 }
+@media all and (max-width: 992px) {
+
+    .contactsBlock {
+        height: auto;
+    }
+    .contactsWrap {
+        padding: 90px 0;
+        height: auto;
+    }
+}
