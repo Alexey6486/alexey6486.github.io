@@ -39,16 +39,16 @@ function Navigation() {
                 <nav className={styles.headerNavigation}>
                     <ul className={styles.headerNavigation__ul}>
                         <li className={styles.headerNavigation__li}>
-                            <a href="#" className={styles.active}>Главная</a>
+                            <a href="#banner" className={styles.active}>Главная</a>
                         </li>
                         <li className={styles.headerNavigation__li}>
-                            <a href="#">Навыки</a>
+                            <a href="#skills">Навыки</a>
                         </li>
                         <li className={styles.headerNavigation__li}>
-                            <a href="#">Работы</a>
+                            <a href="#works">Работы</a>
                         </li>
                         <li className={styles.headerNavigation__li}>
-                            <a href="#">Контакты</a>
+                            <a href="#contacts">Контакты</a>
                         </li>
                     </ul>
                 </nav>

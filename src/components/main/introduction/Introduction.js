@@ -5,7 +5,7 @@ import ImageIntroduction from "./image/ImageIntroduction";
 
 function Introduction() {
     return (
-        <div className={styles.introductionBlock}>
+        <div className={styles.introductionBlock} id="banner">
             <div className="container">
                 <div className={styles.introduction}>
                     <InfoIntroduction/>

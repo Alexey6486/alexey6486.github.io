@@ -9,7 +9,7 @@ import reactImg from "./../../../assets/img/skills/react-new.png";
 
 function Skills() {
     return (
-        <div className={styles.skillsBlock}>
+        <div className={styles.skillsBlock} id="skills">
             <div className="container">
                 <GlobalTitle blockTitleFirstHalf="навыки" blockTitleSecondHalf="ыки"/>
                 <div className={styles.skillsWrap}>

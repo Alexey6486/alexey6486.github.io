@@ -8,7 +8,7 @@ import ContactsInfo from "./contactsInfo/ContactsInfo";
 
 function Contacts() {
     return (
-        <div className={styles.contactsBlock}>
+        <div className={styles.contactsBlock} id="contacts">
             <div className="container">
                 <GlobalTitle blockTitleFirstHalf="контакты" blockTitleSecondHalf="акты"/>
                 <div className={styles.contactsWrap}>

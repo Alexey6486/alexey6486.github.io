@@ -10,7 +10,7 @@ import sample_4 from "./../../../assets/img/samples/sample_4.png"
 function Samples() {
 
     return (
-        <div className={styles.samplesBlock}>
+        <div className={styles.samplesBlock} id="works">
             <div className="container">
                 <GlobalTitle blockTitleFirstHalf="работы" blockTitleSecondHalf="оты" classMod/>
                 <div className={styles.samplesWrap}>

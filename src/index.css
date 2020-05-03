@@ -1,6 +1,8 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Exo+2:wght@300&family=Open+Sans&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 /* PRESET */
 body {
     margin: 0;
