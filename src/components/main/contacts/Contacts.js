@@ -10,7 +10,7 @@ function Contacts() {
     return (
         <div className={styles.contactsBlock} id="contacts">
             <div className="container">
-                <GlobalTitle blockTitleFirstHalf="контакты" blockTitleSecondHalf="акты"/>
+                <GlobalTitle blockTitleFirstHalf="contact me" blockTitleSecondHalf="act" customLength={true}/>
                 <div className={styles.contactsWrap}>
                     <div className={styles.contactsWrapInner}>
                         <ContactsInfo/>

@@ -6,7 +6,7 @@ function ContactsInfo() {
     return (
         <div className={styles.contactsInfo}>
             <div className={styles.contactsInfo__name}>
-                <h3>John Doe</h3>
+                <h3>Alexey Chernov</h3>
             </div>
             <div className={styles.contactsInfo__item}>
                 <div className={styles.contactsInfo__icon}>
@@ -24,11 +24,11 @@ function ContactsInfo() {
                 </div>
                 <div className={styles.contactsInfo__data}>
                     <div className={styles.contactsInfo__title}>
-                        <p>Телефон:</p>
+                        <p>Phone:</p>
                     </div>
-                    <div className={styles.contactsInfo__text}>
-                        <p>+0 (000) 000-00-00</p>
-                    </div>
+                    <a href='tel:+79032531666' className={styles.contactsInfo__text} rel="noopener noreferrer">
+                        <p>+7 (903) 253-16-66</p>
+                    </a>
                 </div>
             </div>
             <div className={styles.contactsInfo__item}>
@@ -57,9 +57,9 @@ function ContactsInfo() {
                     <div className={styles.contactsInfo__title}>
                         <p>E-mail:</p>
                     </div>
-                    <div className={styles.contactsInfo__text}>
-                        <p>JonhDoe@johndoe.net</p>
-                    </div>
+                    <a href='mailto:alexey6486@gmail.com' className={styles.contactsInfo__text} rel="noopener noreferrer">
+                        <p>alexey6486@gmail.com</p>
+                    </a>
                 </div>
             </div>
             <div className={styles.contactsInfo__item}>
@@ -77,12 +77,12 @@ function ContactsInfo() {
                 </div>
                 <div className={styles.contactsInfo__data}>
                     <div className={styles.contactsInfo__title}>
-                        <p>Адрес:</p>
+                        <p>Address:</p>
                     </div>
                     <div className={styles.contactsInfo__text}>
-                        <p>Российская Федерация</p>
-                        <p>г. Город</p>
-                        <p>ул. Улица 0-00</p>
+                        <p>Russian Federation,</p>
+                        <p>Moscow,</p>
+                        <p>Zelenograd</p>
                     </div>
                 </div>
             </div>

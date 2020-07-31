@@ -24,11 +24,10 @@ function Sample(props) {
     }
 
     return (
-        <div className={props.activeClass ? `${styles.sample} ${styles.active}` : styles.sample}
-             >
+        <div className={props.activeClass ? `${styles.sample} ${styles.active}` : styles.sample}>
             <div className={styles.sample__image} onClick={clickEvent}>
                 <img src={props.imgLink} alt="" onMouseOver={mouseOver}/>
-                <a className={styles.sample__details} href={props.sampleUrl} target="_blank" onMouseOver={mouseOver} onClick={clickEvent2}>
+                <a className={styles.sample__details} href={props.sampleUrl} target="_blank" onMouseOver={mouseOver} onClick={clickEvent2} rel="noopener noreferrer">
                     Подробнее
                 </a>
             </div>

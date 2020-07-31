@@ -19,7 +19,7 @@
 }
 .infoIntroductionBlock__title{
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .infoIntroductionBlock__title::before{
     content: "";
@@ -36,7 +36,7 @@
 .infoIntroductionBlock__title>h2{
     pointer-events: none;
     color: var(--mainWhite);
-    font-size: 50px;
+    font-size: 40px;
     font-weight: bold;
     position: relative;
     z-index: 3;

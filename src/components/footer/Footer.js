@@ -9,11 +9,11 @@ function Footer() {
             <div className="container">
                 <div className={styles.footerInner}>
                     <div className={styles.footer__author}>
-                        <h3>John Doe</h3>
+                        <h3>Alexey Chernov</h3>
                     </div>
                     <Contact/>
                     <div className={styles.footer__copyright}>
-                        <p>&copy; Все права защищены</p>
+                        <p>Copyright &copy; 2020</p>
                     </div>
                 </div>
             </div>

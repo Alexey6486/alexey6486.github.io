@@ -11,7 +11,7 @@ function Skills() {
     return (
         <div className={styles.skillsBlock} id="skills">
             <div className="container">
-                <GlobalTitle blockTitleFirstHalf="навыки" blockTitleSecondHalf="ыки"/>
+                <GlobalTitle blockTitleFirstHalf="skills" blockTitleSecondHalf="lls"/>
                 <div className={styles.skillsWrap}>
                     <Skill imgSrc={reactImg} skillType="React" reactAnimation/>
                     <Skill imgSrc={jsImg} skillType="JavaScript"/>

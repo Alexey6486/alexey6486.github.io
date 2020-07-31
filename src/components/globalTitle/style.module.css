@@ -59,3 +59,9 @@
     background-color: var(--mainWhite);
     box-shadow: 3px 3px 2px rgba(255,255,255,0.5);
 }
+.globalTitle>h2>span.lengthContactMod{
+    left: 43%;
+}
+.globalTitle>h2>span.lengthContactMod::before{
+    left: -5px;
+}

@@ -4,14 +4,14 @@ import  styles from './style.module.css';
 
 function Navigation() {
 
-    function menuToggle(e) {
-        e.stopPropagation();
-        e.preventDefault();
-        let hiddenNav_1 = e.target.parentElement.querySelector(`.${styles.headerNavigationBlock}`);
-        !hiddenNav_1.classList.contains(`${styles.active}`)
-            ? hiddenNav_1.classList.add(`${styles.active}`)
-            : hiddenNav_1.classList.remove(`${styles.active}`)
-    }
+    // function menuToggle(e) {
+    //     e.stopPropagation();
+    //     e.preventDefault();
+    //     let hiddenNav_1 = e.target.parentElement.querySelector(`.${styles.headerNavigationBlock}`);
+    //     !hiddenNav_1.classList.contains(`${styles.active}`)
+    //         ? hiddenNav_1.classList.add(`${styles.active}`)
+    //         : hiddenNav_1.classList.remove(`${styles.active}`)
+    // }
     function menuToggle2(e) {
         e.stopPropagation();
         e.preventDefault();
@@ -39,16 +39,16 @@ function Navigation() {
                 <nav className={styles.headerNavigation}>
                     <ul className={styles.headerNavigation__ul}>
                         <li className={styles.headerNavigation__li}>
-                            <a href="#banner" className={styles.active}>Главная</a>
+                            <a href="#banner" className={styles.active} rel="noopener noreferrer">Main</a>
                         </li>
                         <li className={styles.headerNavigation__li}>
-                            <a href="#skills">Навыки</a>
+                            <a href="#skills" rel="noopener noreferrer">Skills</a>
                         </li>
                         <li className={styles.headerNavigation__li}>
-                            <a href="#works">Работы</a>
+                            <a href="#works" rel="noopener noreferrer">Samples</a>
                         </li>
                         <li className={styles.headerNavigation__li}>
-                            <a href="#contacts">Контакты</a>
+                            <a href="#contacts" rel="noopener noreferrer">Contact me</a>
                         </li>
                     </ul>
                 </nav>

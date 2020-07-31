@@ -14,10 +14,13 @@
 .contactFooter__Wrap:not(:last-child){
     margin-right: 15px;
 }
-.contactFooter__Wrap>svg{
+.contactFooter__Wrap a{
+    display: block;
+}
+.contactFooter__Wrap svg{
     fill: var(--mainBlack);
     transition: all linear 200ms;
 }
-.contactFooter__Wrap:hover>svg{
+.contactFooter__Wrap:hover svg{
     fill: var(--mainOrange);
 }

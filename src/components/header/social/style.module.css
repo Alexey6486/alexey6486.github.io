@@ -10,10 +10,13 @@
 .socialWrap:not(:last-child){
     margin-right: 10px;
 }
-.socialWrap>svg{
+.socialWrap a{
+    display: block;
+}
+.socialWrap svg{
     fill: #ffffff;
     transition: all linear 200ms;
 }
-.socialWrap:hover>svg{
+.socialWrap:hover svg{
     fill: var(--mainOrange);
 }

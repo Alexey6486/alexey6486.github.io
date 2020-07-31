@@ -12,12 +12,12 @@ function Samples() {
     return (
         <div className={styles.samplesBlock} id="works">
             <div className="container">
-                <GlobalTitle blockTitleFirstHalf="работы" blockTitleSecondHalf="оты" classMod/>
+                <GlobalTitle blockTitleFirstHalf="samples" blockTitleSecondHalf="ples" classMod/>
                 <div className={styles.samplesWrap}>
-                    <Sample activeClass imgLink={sample_1}/>
-                    <Sample imgLink={sample_2}/>
-                    <Sample imgLink={sample_3}/>
-                    <Sample imgLink={sample_4}/>
+                    <Sample activeClass imgLink={sample_1} sampleUrl={'http://netadmin.acroweb296.tmweb.ru/'}/>
+                    <Sample imgLink={sample_2} sampleUrl={'http://ffr.acroweb296.tmweb.ru/'}/>
+                    <Sample imgLink={sample_3} sampleUrl={'https://grantfinance.ru/'}/>
+                    <Sample imgLink={sample_4} sampleUrl={'https://bmw-sphere.ru/'}/>
                 </div>
             </div>
         </div>

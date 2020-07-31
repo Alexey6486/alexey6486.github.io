@@ -13,10 +13,13 @@
 .contactWrap:not(:last-child){
     margin-right: 10px;
 }
-.contactWrap>svg{
+.contactWrap a{
+    display: block;
+}
+.contactWrap svg{
     fill: #ffffff;
     transition: all linear 200ms;
 }
-.contactWrap:hover>svg{
+.contactWrap:hover svg{
     fill: var(--mainOrange);
 }

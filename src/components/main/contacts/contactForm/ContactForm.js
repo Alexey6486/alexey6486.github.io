@@ -7,21 +7,21 @@ function ContactForm() {
             <form className={styles.contactsForm} action="#">
                 <div className={styles.contactsForm__group}>
                     <input type="text" required/>
-                    <label htmlFor="contactsForm__input">Ваше имя</label>
+                    <label htmlFor="contactsForm__input">Your name</label>
                 </div>
                 <div className={styles.contactsForm__group}>
                     <input type="email" required/>
-                    <label htmlFor="contactsForm__input">Ваш e-mail</label>
+                    <label htmlFor="contactsForm__input">E-mail</label>
                 </div>
                 <div className={styles.contactsForm__group}>
                     <input type="number" required/>
-                    <label htmlFor="contactsForm__input">Ваш телефон</label>
+                    <label htmlFor="contactsForm__input">Phone</label>
                 </div>
                 <div className={`${styles.contactsForm__group} ${styles.textareaGroup}`}>
-                    <textarea placeholder="Ваше сообщение"></textarea>
+                    <textarea placeholder="Type your message..." required></textarea>
                 </div>
                 <div className={`${styles.contactsForm__group} ${styles.submitGroup}`}>
-                    <button type="submit">Отправить форму</button>
+                    <button type="submit">Let me know</button>
                 </div>
             </form>
         </div>

@@ -5,7 +5,7 @@ function InfoIntroduction() {
     return (
         <div className={styles.infoIntroductionBlock}>
             <div className={styles.infoIntroductionBlock__title}>
-                <h2>John Doe</h2>
+                <h2>Alexey Chernov</h2>
             </div>
             <div className={styles.infoIntroductionBlock__position}>
                 <h3>WEB developer</h3>
