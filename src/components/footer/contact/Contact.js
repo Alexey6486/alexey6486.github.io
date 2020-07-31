@@ -27,7 +27,7 @@ function Contact() {
                 </a>
             </div>
             <div className={styles.contactFooter__Wrap}>
-                <a href="mailto:alexey6486@gmail.com">
+                <a href="mailto:chernov.alexey.zel@gmail.com">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <g>
                             <g>

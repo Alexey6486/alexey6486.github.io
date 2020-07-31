@@ -21,7 +21,7 @@ function Contact() {
                 </a>
             </div>
             <div className={styles.contactWrap}>
-                <a href="mailto:alexey6486@gmail.com" rel="noopener noreferrer">
+                <a href="mailto:chernov.alexey.zel@gmail.com" rel="noopener noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <g>
                             <g>

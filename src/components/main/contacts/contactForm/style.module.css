@@ -1,10 +1,9 @@
 .contactsFormWrap{
-    width: 100%;
-    max-width: 350px;
+    width: 50%;
 }
 .contactsForm{
     width: 100%;
-    max-width: inherit;
+    max-width: 350px;
 }
 .contactsForm__group{
     position: relative;
@@ -124,6 +123,21 @@
     background-color: transparent;
     color: var(--mainWhite);
     box-shadow: 3px -3px 0 rgba(245,245,245,1);
+}
+.msgSent{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    width: 50%;
 }
 
 @media all and (max-width: 768px) {

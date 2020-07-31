@@ -30,14 +30,17 @@
 .contactsWrap{
     /*padding-top: 50px;*/
     height: calc(100% - 70px);
+    min-height: 570px;
     align-items: center;
     display: flex;
+
 }
 .contactsWrapInner{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
+    min-height: 362px;
 }
 @media all and (max-width: 992px) {
 
