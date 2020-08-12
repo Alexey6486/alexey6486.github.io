@@ -8,7 +8,7 @@ function InfoIntroduction() {
                 <h2>Alexey Chernov</h2>
             </div>
             <div className={styles.infoIntroductionBlock__position}>
-                <h3>WEB developer</h3>
+                <h3>Front-end Web<br/><span>Developer</span></h3>
             </div>
         </div>
     );
