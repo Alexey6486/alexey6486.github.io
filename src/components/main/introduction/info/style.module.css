@@ -75,15 +75,21 @@
     .infoIntroductionBlock__title>h2{
         background: url("../../../../assets/img/introduction-block/banner-bg.jpg");
         background-size: cover;
-        background-attachment: fixed;
+        background-attachment: unset;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        background-position: -284px 104px;
+        background-position: top;
     }
     .infoIntroductionBlock__title>h2 {
         font-size: 60px;
         text-transform: uppercase;
+        text-align: center;
+        line-height: 1;
     }
+    .infoIntroductionBlock__title::before{
+        height: 280px;
+    }
+
 }
 @media (max-width: 400px) {
 
